@@ -1,0 +1,7 @@
+;;; awful.setup -*- scheme -*-
+
+(compile -S -O3 -d1 test-runner.scm -o test-runner)
+
+(install-program 'test-runner
+                 '("test-runner")
+                 `((version "0.0.5")))

@@ -1,0 +1,8 @@
+;;; test-runner.meta -*- scheme -*-
+
+((egg "test-runner.egg")
+ (synopsis "Test runner makes it easy to groups of tests.")
+ (license "BSD")
+ (category test)
+ (depends test posix srfi-13 srfi-1 easy-args)
+ (files "test-runner.scm" "test-runner.meta" "test-runner.setup"))
