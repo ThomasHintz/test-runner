@@ -1,7 +1,7 @@
-;;; awful.setup -*- scheme -*-
+;;; test-runner.setup -*- scheme -*-
 
-(compile -S -O3 -d1 test-runner.scm -o test-runner)
-
-(install-program 'test-runner
-                 '("test-runner")
-                 `((version "0.0.5")))
+(compile -S -s -O3 -d1 -j test-runner test-runner.scm)
+(compile -S -s -O3 -d1 test-runner.import.scm)
+(install-extension 'test-runner
+                   '("test-runner.so" "test-runner.import.so")
+                   '((version "0.0.4")))
