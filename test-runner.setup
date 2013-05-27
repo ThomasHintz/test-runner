@@ -4,4 +4,4 @@
 (compile -S -s -O3 -d1 test-runner.import.scm)
 (install-extension 'test-runner
                    '("test-runner.so" "test-runner.import.so")
-                   '((version "0.0.4")))
+                   '((version "0.0.5")))
