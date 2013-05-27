@@ -27,5 +27,6 @@
     (filter-by))
    (if (compiled) "" ".scm"))
   (test-end "all")
+  (test-exit)
   )
 )
